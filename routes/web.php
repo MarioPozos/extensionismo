@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::view('/','hola')->name('hola');//Realizarlo parap politicas de privacidad,terminos y condiciones(texto plano) 
 Route::view('/registro','registro')->name('registro');
 Route::view('/ayuda','ayuda')->name('ayuda');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
